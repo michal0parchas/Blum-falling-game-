@@ -1,0 +1,13 @@
+#Requires AutoHotkey v2.0
+Loop
+{
+
+ PixelSearch(&Px, &Py, 0, 0, 1920, 1080, 0x76f620, 10)
+   Click Px + N := Random(1, 7), Py + N := Random(1, 10)
+  
+sleep N := Random(40, 70)
+
+}Return
+
+Pause::Pause -1  ; The Pause/Break key.
+#p::Pause -1  ; Win+P
